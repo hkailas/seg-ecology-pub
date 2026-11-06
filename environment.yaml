@@ -4,5 +4,12 @@ channels:
   - nodefaults  
 dependencies:
   
+  - numba
+  - numpy
+  - plotly
   - python=3.12
+  - scipy
   - matplotlib
+  - jupyterlab
+  - ipykernel
+  - ipywidgets
