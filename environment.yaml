@@ -8,3 +8,6 @@ dependencies:
   - plotly
   - python=3.12
   - scipy
+  - jupyterlab
+  - ipykernel
+  - ipywidgets
