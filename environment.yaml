@@ -7,4 +7,4 @@ dependencies:
   - numpy
   - plotly
   - python=3.12
-
+  - scipy
