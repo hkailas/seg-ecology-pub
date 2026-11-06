@@ -3,11 +3,6 @@ channels:
   - conda-forge
   - nodefaults  
 dependencies:
-  - numba
-  - numpy
-  - plotly
+  
   - python=3.12
-  - scipy
-  - jupyterlab
-  - ipykernel
-  - ipywidgets
+  - matplotlib
