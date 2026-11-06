@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - nodefaults  
 dependencies:
+  - zipp=3.23.0
   - numba
   - numpy
   - plotly
