@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Project specific
+.vscode/
+
+# animations
+*.html
+
+graphify-out/
+AGENTS.md
+.seg-slurm.json
+results/reproduce_paper/runs/
+
+# The entire compute_data directory
+results/
+imported-results/
+
+# Ignore any svg files 
+*.svg
+*.png
+*.pdf
