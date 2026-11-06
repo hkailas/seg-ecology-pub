@@ -2,8 +2,7 @@ name: SEG
 channels:
   - conda-forge
 dependencies:
-  
-  - mpi4py
+
   - numba
   - numpy
   - pandas
