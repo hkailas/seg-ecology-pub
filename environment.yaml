@@ -5,12 +5,9 @@ dependencies:
 
   - numba
   - numpy
-  - pandas
   - plotly
-  - pytest
   - python=3.13
   - scipy
-  - tqdm
   - matplotlib
   - jupyterlab
   - ipykernel
