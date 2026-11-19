@@ -1,0 +1,147 @@
+{
+  "SIMULATION_PARAMS": {
+    "t_start": 0,
+    "t_max": 1000000,
+    "num_points": null,
+    "eq_tsteps": 5000,
+    "eq_thresh": 1e-06,
+    "abs_thresh": 1e-06,
+    "chunk_size": 20000,
+    "verbose": false,
+    "evo_dyn": true,
+    "store_sol": false,
+    "min_thresh": 0.0001,
+    "timeout_seconds": 130,
+    "method": "RK45",
+    "maxstep": 50,
+    "model_name": "model3"
+  },
+  "MODEL_PARAMS": {
+    "r_max": 0.2,
+    "K": 1000,
+    "g": 0.2,
+    "alpha": 1,
+    "beta": 1,
+    "beta_bully": 2,
+    "sigma_a_squared": 4,
+    "E": 0.001,
+    "d": 0.1,
+    "sigma": 0.05,
+    "include_E": true
+  },
+  "ECONOMIC_PARAMS": {
+    "L": 100.0,
+    "p": 8,
+    "delta": 0.1,
+    "alpha_leader": 0.1
+  },
+  "IC_PARAMS": {
+    "num_pops": 1,
+    "min_pop": 10,
+    "max_pop": 500,
+    "min_trait": 0,
+    "base_seed": 546,
+    "max_trait": 10,
+    "num_ICs": 5,
+    "num_ICs_E": 5,
+    "initial_population": 63,
+    "initial_trait": 6.4637
+  },
+  "OUTPUT_CONFIG": {
+    "date": "Fig2-C",
+    "compute_dir": "compute_data/local",
+    "base_dir": "results"
+  },
+  "ANALYTICAL_PARAMS": {},
+  "E_GRID": [
+    0.001,
+    0.035448275862068966,
+    0.06989655172413793,
+    0.10434482758620689,
+    0.13879310344827586,
+    0.17324137931034483,
+    0.20768965517241378,
+    0.24213793103448275,
+    0.2765862068965517,
+    0.31103448275862067,
+    0.34548275862068967,
+    0.3799310344827586,
+    0.41437931034482756,
+    0.44882758620689656,
+    0.4832758620689655,
+    0.5177241379310344,
+    0.5521724137931034,
+    0.5866206896551724,
+    0.6210689655172413,
+    0.6555172413793103,
+    0.6899655172413793,
+    0.7244137931034482,
+    0.7588620689655172,
+    0.7933103448275862,
+    0.8277586206896551,
+    0.8622068965517241,
+    0.8966551724137931,
+    0.9311034482758621,
+    0.965551724137931,
+    1.0
+  ],
+  "U_GRID": [],
+  "PRESET_NAME": "model3_f2_C",
+  "PRESET_DESCRIPTION": "Model 3 - 1 species - for dynamics",
+  "entrypoint": "main_single_species_dynamics.py",
+  "time_limit": null,
+  "conditions": [
+    {
+      "key": "low_e_evolution",
+      "energy": 0.6,
+      "evo_dyn": true,
+      "energy_label": "Low E",
+      "linestyle": "-",
+      "num_plot_points": 2000,
+      "simulation_overrides": {
+        "store_sol": true,
+        "evo_dyn": true,
+        "stop_at_equilibrium": true
+      }
+    },
+    {
+      "key": "low_e_no_evolution",
+      "energy": 0.6,
+      "evo_dyn": false,
+      "energy_label": "Low E",
+      "linestyle": "--",
+      "num_plot_points": 2000,
+      "simulation_overrides": {
+        "store_sol": true,
+        "evo_dyn": false,
+        "stop_at_equilibrium": true
+      }
+    },
+    {
+      "key": "high_e_evolution",
+      "energy": 1.0,
+      "evo_dyn": true,
+      "energy_label": "High E",
+      "linestyle": "-",
+      "num_plot_points": 2000,
+      "simulation_overrides": {
+        "store_sol": true,
+        "evo_dyn": true,
+        "stop_at_equilibrium": true
+      }
+    },
+    {
+      "key": "high_e_no_evolution",
+      "energy": 1.0,
+      "evo_dyn": false,
+      "energy_label": "High E",
+      "linestyle": "--",
+      "num_plot_points": 2000,
+      "simulation_overrides": {
+        "store_sol": true,
+        "evo_dyn": false,
+        "stop_at_equilibrium": true
+      }
+    }
+  ]
+}

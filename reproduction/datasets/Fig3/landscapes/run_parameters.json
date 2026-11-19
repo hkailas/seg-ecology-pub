@@ -1,0 +1,226 @@
+{
+  "rescue_low": {
+    "preset": "model1_f3_adaptive_landscapes",
+    "MODEL_PARAMS": {
+      "r_max": 0.05,
+      "K": 1000,
+      "g": 0.1,
+      "alpha": 1,
+      "beta": 1,
+      "beta_bully": 2,
+      "sigma_a_squared": 4,
+      "E": 0.001,
+      "d": 0.1,
+      "sigma": 0.1,
+      "include_E": true
+    },
+    "SIMULATION_PARAMS": {
+      "t_start": 0,
+      "t_max": 1800000000,
+      "num_points": null,
+      "eq_tsteps": 5000,
+      "eq_thresh": 1e-06,
+      "abs_thresh": 1e-06,
+      "chunk_size": 20000,
+      "verbose": false,
+      "evo_dyn": true,
+      "store_sol": false,
+      "min_thresh": 0.0001,
+      "timeout_seconds": 130,
+      "method": "RK45",
+      "maxstep": 50,
+      "model_name": "model1"
+    },
+    "IC_PARAMS": {
+      "num_pops": 8,
+      "min_pop": 10,
+      "max_pop": 500,
+      "min_trait": 0,
+      "base_seed": 546,
+      "max_trait": 30,
+      "num_ICs": 20,
+      "num_ICs_E": 80
+    },
+    "E": 0.6,
+    "initial_populations": [
+      100
+    ],
+    "initial_traits": [
+      7
+    ],
+    "threshold": 0.001,
+    "mutant_range": [
+      0,
+      25
+    ],
+    "points": 1000
+  },
+  "rescue_high": {
+    "preset": "model1_f3_adaptive_landscapes",
+    "MODEL_PARAMS": {
+      "r_max": 0.05,
+      "K": 1000,
+      "g": 0.1,
+      "alpha": 1,
+      "beta": 1,
+      "beta_bully": 2,
+      "sigma_a_squared": 4,
+      "E": 0.001,
+      "d": 0.1,
+      "sigma": 0.1,
+      "include_E": true
+    },
+    "SIMULATION_PARAMS": {
+      "t_start": 0,
+      "t_max": 1800000000,
+      "num_points": null,
+      "eq_tsteps": 5000,
+      "eq_thresh": 1e-06,
+      "abs_thresh": 1e-06,
+      "chunk_size": 20000,
+      "verbose": false,
+      "evo_dyn": true,
+      "store_sol": false,
+      "min_thresh": 0.0001,
+      "timeout_seconds": 130,
+      "method": "RK45",
+      "maxstep": 50,
+      "model_name": "model1"
+    },
+    "IC_PARAMS": {
+      "num_pops": 8,
+      "min_pop": 10,
+      "max_pop": 500,
+      "min_trait": 0,
+      "base_seed": 546,
+      "max_trait": 30,
+      "num_ICs": 20,
+      "num_ICs_E": 80
+    },
+    "E": 1.0,
+    "initial_populations": [
+      100
+    ],
+    "initial_traits": [
+      7
+    ],
+    "threshold": 0.001,
+    "mutant_range": [
+      0,
+      25
+    ],
+    "points": 1000
+  },
+  "suicide_low": {
+    "preset": "model3_f3_adaptive_landscapes",
+    "MODEL_PARAMS": {
+      "r_max": 0.2,
+      "K": 1000,
+      "g": 0.2,
+      "alpha": 1,
+      "beta": 1,
+      "beta_bully": 2,
+      "sigma_a_squared": 4,
+      "E": 0.001,
+      "d": 0.1,
+      "sigma": 0.05,
+      "include_E": true
+    },
+    "SIMULATION_PARAMS": {
+      "t_start": 0,
+      "t_max": 1000000,
+      "num_points": null,
+      "eq_tsteps": 5000,
+      "eq_thresh": 1e-06,
+      "abs_thresh": 1e-06,
+      "chunk_size": 20000,
+      "verbose": false,
+      "evo_dyn": true,
+      "store_sol": false,
+      "min_thresh": 0.0001,
+      "timeout_seconds": 130,
+      "method": "RK45",
+      "maxstep": 50,
+      "model_name": "model3"
+    },
+    "IC_PARAMS": {
+      "num_pops": 1,
+      "min_pop": 10,
+      "max_pop": 500,
+      "min_trait": 0,
+      "base_seed": 546,
+      "max_trait": 10,
+      "num_ICs": 5,
+      "num_ICs_E": 5
+    },
+    "E": 0.6,
+    "initial_populations": [
+      100
+    ],
+    "initial_traits": [
+      7
+    ],
+    "threshold": 0.001,
+    "mutant_range": [
+      0,
+      85
+    ],
+    "points": 10000
+  },
+  "suicide_high": {
+    "preset": "model3_f3_adaptive_landscapes",
+    "MODEL_PARAMS": {
+      "r_max": 0.2,
+      "K": 1000,
+      "g": 0.2,
+      "alpha": 1,
+      "beta": 1,
+      "beta_bully": 2,
+      "sigma_a_squared": 4,
+      "E": 0.001,
+      "d": 0.1,
+      "sigma": 0.05,
+      "include_E": true
+    },
+    "SIMULATION_PARAMS": {
+      "t_start": 0,
+      "t_max": 1000000,
+      "num_points": null,
+      "eq_tsteps": 5000,
+      "eq_thresh": 1e-06,
+      "abs_thresh": 1e-06,
+      "chunk_size": 20000,
+      "verbose": false,
+      "evo_dyn": true,
+      "store_sol": false,
+      "min_thresh": 0.0001,
+      "timeout_seconds": 130,
+      "method": "RK45",
+      "maxstep": 50,
+      "model_name": "model3"
+    },
+    "IC_PARAMS": {
+      "num_pops": 1,
+      "min_pop": 10,
+      "max_pop": 500,
+      "min_trait": 0,
+      "base_seed": 546,
+      "max_trait": 10,
+      "num_ICs": 5,
+      "num_ICs_E": 5
+    },
+    "E": 1.0,
+    "initial_populations": [
+      100
+    ],
+    "initial_traits": [
+      7
+    ],
+    "threshold": 0.001,
+    "mutant_range": [
+      0,
+      85
+    ],
+    "points": 10000
+  }
+}

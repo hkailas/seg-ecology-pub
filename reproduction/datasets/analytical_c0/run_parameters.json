@@ -1,0 +1,45 @@
+{
+  "SIMULATION_PARAMS": {
+    "model_name": "model1"
+  },
+  "MODEL_PARAMS": {
+    "r_max": 1.0,
+    "g": 0.3,
+    "alpha": 2.0,
+    "beta": 2.0,
+    "d": 0.1,
+    "K": 1000.0
+  },
+  "ECONOMIC_PARAMS": {
+    "L": 100.0,
+    "p": 10.0,
+    "delta": 0.18,
+    "alpha_leader": 0.01,
+    "c1": 0.0
+  },
+  "IC_PARAMS": {
+    "num_pops": 1,
+    "base_seed": 546
+  },
+  "OUTPUT_CONFIG": {
+    "date": "analytical_c0",
+    "base_dir": "results"
+  },
+  "ANALYTICAL_PARAMS": {
+    "E_min": 0.01,
+    "E_max": 1.0,
+    "E_points": 10000,
+    "u_min": 0.0,
+    "u_max": 20.0,
+    "u_points": 10000,
+    "leader_E_min": 0.01,
+    "naive_E_min": 1e-05,
+    "nash_u_min": 0.01,
+    "nash_u_max": 20.0,
+    "near_optimal_fraction": 0.01
+  },
+  "E_GRID": [],
+  "U_GRID": [],
+  "PRESET_NAME": "model1_analytical_c0",
+  "PRESET_DESCRIPTION": "Figure 5D: analytical model with c1=0"
+}

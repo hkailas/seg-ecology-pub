@@ -1,0 +1,7 @@
+{
+  "source_preset": "model1_f4_adaptive_landscapes",
+  "species_sha256": "7f62375b2511be88263ee4c0db7453e7a979ee1ce97523968138c4598318292c",
+  "run_metadata_sha256": "9ff2a0a79d9dbc12bd6d64a2ecd8d2641c43f4583762301a455b6fe83b1b325d",
+  "leader_preset": "model1_f4_adaptive_landscapes",
+  "leader_sha256": "e5fb84a27df6296451b193b2a55cbefafa768d8cced02c4a531071432c3ebad3"
+}
